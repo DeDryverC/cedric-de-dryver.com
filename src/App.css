@@ -139,6 +139,12 @@ hr {
 .portfolio{
     background-color: rgba(216, 216, 216, 0.9);
 }
+.contact{
+    text-align: center !important;
+}
+.contact-logo{
+    margin: 2%;
+}
 .footer-custom{
     text-align: center;
     color: #DB6AFF;
