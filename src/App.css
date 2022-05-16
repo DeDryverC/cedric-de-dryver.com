@@ -1,39 +1,110 @@
-.App {
+.pp{
+    height: 25%;
+    width: 20%;
+    border-radius: 50%;
+    
+
+  }
+.App{
+    color:white;
+    font-family: 'Cocogoose',Arial,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: large;
+    height:auto;
+}
+.intro{
+    margin-top:-2%;
+    margin-left: 8%;
+    position:relative;
+    float:left;
+}
+.title{
+    font-family: 'CocogooseTitle',Arial,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 50px;
+    margin-left:-1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border: solid white 3px;
+    position: absolute;
+    top: 36%;
+    border-radius: 50px;
+}
+.how-am-i{
+    margin-top:-7%;
+    margin-left: 25%;
+    position:relative;
+    float:left;
+    text-align: center;
+    margin-right: 5%;
+}
+.how-am-i-title{
+    font-size: 30px;
+}
+.navbar-custom{
+    padding-top: 2%;
+    padding-bottom: 6%;
+    background:linear-gradient(to bottom, rgba(219, 106, 255, 1), transparent);
     text-align: center;
 }
-
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+.navbar-inside{
+    margin-left:15%;
+    margin-right:15%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.navbar-element{
+    margin: 4%;
+    font-family: 'NorthZone',Arial,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: large;
+    text-decoration: none;
+    color: black;
 }
-
-.App-header {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
+.navbar-title{
+    margin: 2%;
+    font-family: 'NorthZone',Arial,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+.navbar-title:hover{
     color: white;
+    -ms-transform: scale(1.50); /* IE 9 */
+	-webkit-transform: scale(1.10); /* Safari 3-8, chrome*/
+	transform: scale(1.1); 
+    
 }
-
-.App-link {
-    color: #61dafb;
+.navbar-element:hover{
+    color: white;
+    -ms-transform: scale(1.10); /* IE 9 */
+	-webkit-transform: scale(1.10); /* Safari 3-8, chrome*/
+	transform: scale(1.1); 
+    
 }
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.navbar-logo{
+    margin: 2%;
+    padding: 0.7%;
+    font-size: large;
+    font-family: 'Brondes',Arial,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    border: solid black;
+    border-radius: 50%;
+    
+  
+}
+.footer-custom{
+    text-align: center;
+    color: #DB6AFF;
+    margin-top:2%;
+    margin-left:10%;
+    margin-right: 10%;
 }
 
 #tsparticles {
@@ -46,3 +117,22 @@
     top: 0;
     z-index: -1;
 }
+
+@font-face {
+    font-family: 'NorthZone';
+    src: url('./font/North\ Zone.otf');
+}
+@font-face {
+    font-family: 'Brondes';
+    src: url('./font/Brondes\ Blue.ttf');
+}
+
+@font-face {
+    font-family: 'CocogooseTitle';
+    src: url('./font/Cocogoose\ Pro\ Light-trial.ttf');
+}
+@font-face {
+    font-family: 'Cocogoose';
+    src: url('./font/Cocogoose\ Pro\ Thin-trial.ttf');
+}
+

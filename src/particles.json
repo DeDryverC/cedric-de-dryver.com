@@ -23,16 +23,16 @@
       },
       "repulse": {
         "distance": 200,
-        "duration": 0.4
+        "duration": 2
       }
     }
   },
   "particles": {
     "color": {
-      "value": "#ffffff"
+      "value": "#DB6AFF"
     },
     "links": {
-      "color": "#ffffff",
+      "color": "#DB6AFF",
       "distance": 150,
       "enable": true,
       "opacity": 0.5,
@@ -48,7 +48,7 @@
         "default": "bounce"
       },
       "random": false,
-      "speed": 6,
+      "speed": 2,
       "straight": false
     },
     "number": {
