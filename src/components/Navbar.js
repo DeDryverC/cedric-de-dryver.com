@@ -1,4 +1,5 @@
 import React, { useCallback } from 'react';
+import { Link } from 'react-router-dom';
 import {Nav,} from 'react-bootstrap'
 import '../App.css';
 
@@ -7,11 +8,11 @@ function Navbar( ){
     return(
         <div className="navbar-custom">
             <div className="navbar-inside">
-                <a href="" className="navbar-title">Acceuil</a>
-                <a className="navbar-element">Compétences</a>
-                <a className="navbar-logo"><b>cdd</b></a>
-                <a className="navbar-element">Portfolio</a>
-                <a className="navbar-element">Contacts et liens</a>
+                <Link to="/" className="navbar-title">Acceuil</Link>
+                <Link to="/Skills" className="navbar-element">Compétences</Link>
+                <Link to="/" className="navbar-logo"><b>cdd</b></Link>
+                <Link to="/Portfolio"className="navbar-element">Portfolio</Link>
+                <Link to="/Informations" className="navbar-element">Contacts et liens</Link>
             </div>
         </div>
     )

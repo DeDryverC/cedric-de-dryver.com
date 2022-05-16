@@ -11,7 +11,6 @@
     font-weight: normal;
     font-style: normal;
     font-size: large;
-    height:auto;
 }
 .intro{
     margin-top:-2%;
@@ -63,7 +62,7 @@
     color: black;
 }
 .navbar-title{
-    margin: 2%;
+    margin: 4%;
     font-family: 'NorthZone',Arial,sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -86,7 +85,7 @@
     
 }
 .navbar-logo{
-    margin: 2%;
+    margin: 4%;
     padding: 0.7%;
     font-size: large;
     font-family: 'Brondes',Arial,sans-serif;
@@ -99,12 +98,56 @@
     
   
 }
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;
+    margin-left: 2%;               
+    background-color:#ffffff;
+    height: 2px;
+  }
+.skills{
+    margin-left:10%;
+    margin-right: 10%;
+}
+.skills-title{
+    font-family: 'CocogooseTitle',Arial,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: xx-large;
+}
+.skills-left{
+    text-align: left;
+}
+.skills-right {
+    text-align: right;
+}
+.skills-left-txt{
+    text-align: left;
+    margin-left:15% !important;
+}
+.skills-right-txt{
+    text-align: right;
+    margin-right:15%;
+    list-style-position: inside;
+    direction: rtl;
+}
+.skills-puce{
+    font-size: 50px;
+}
+.portfolio{
+    background-color: rgba(216, 216, 216, 0.9);
+}
 .footer-custom{
     text-align: center;
     color: #DB6AFF;
-    margin-top:2%;
-    margin-left:10%;
-    margin-right: 10%;
+    margin-bottom:2%;
+    padding-top:2%;
+    background:linear-gradient(to top, rgb(58, 58, 58,1), transparent);
+    width: 100%;
+    margin-bottom: -2%;
+    bottom: 0;
 }
 
 #tsparticles {
