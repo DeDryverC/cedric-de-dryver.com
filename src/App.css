@@ -2,9 +2,14 @@
     height: 25%;
     width: 20%;
     border-radius: 50%;
+    position: relative;
+    z-index: 10;
     
 
   }
+.portfolio-title{
+    text-align: center;
+}
 .App{
     color:white;
     font-family: 'Cocogoose',Arial,sans-serif;
@@ -13,7 +18,7 @@
     font-size: large;
 }
 .intro{
-    margin-top:-2%;
+    margin-top:-3%;
     margin-left: 8%;
     position:relative;
     float:left;
@@ -23,13 +28,21 @@
     font-weight: normal;
     font-style: normal;
     font-size: 50px;
-    margin-left:-1%;
-    padding-left: 1%;
-    padding-right: 1%;
+    margin-left:-2%;
+    padding-left: 4%;
+    padding-right: 4%;
     border: solid white 3px;
-    position: absolute;
+    position: relative;
+    z-index: 2;
+    
     top: 36%;
     border-radius: 50px;
+}
+.home-background{
+    background:linear-gradient(to top,rgba(58, 58, 58, 1) 1%, rgba(58, 58, 58, 1), transparent);
+}
+.home-background2{
+    background:linear-gradient(to top,rgba(58, 58, 58, 1) 5%, rgba(58, 58, 58, 0.9), rgba(58, 58, 58, 0.7),transparent);
 }
 .how-am-i{
     margin-top:-7%;
@@ -44,29 +57,32 @@
 }
 .navbar-custom{
     padding-top: 2%;
-    padding-bottom: 6%;
-    background:linear-gradient(to bottom, rgba(219, 106, 255, 1), transparent);
+    padding-bottom: 4%;
+    background:linear-gradient(to bottom,rgba(220, 107, 255, 1) 10%, rgba(220, 107, 255, 0.7), transparent);
     text-align: center;
 }
+.navbar-fade{
+    background:linear-gradient(to bottom, #db6aff, transparent);
+}
 .navbar-inside{
-    margin-left:15%;
-    margin-right:15%;
+    width: 80%;
+    margin-left:12%;
 }
 .navbar-element{
-    margin: 4%;
-    font-family: 'NorthZone',Arial,sans-serif;
+    margin: 2%;
+    font-family: 'CocogooseTitle',Arial,sans-serif;
     font-weight: normal;
     font-style: normal;
-    font-size: large;
+    font-size: xx-large;
     text-decoration: none;
     color: black;
 }
 .navbar-title{
-    margin: 4%;
-    font-family: 'NorthZone',Arial,sans-serif;
+    margin: 2%;
+    font-family: 'CocogooseTitle',Arial,sans-serif;
     font-weight: normal;
     font-style: normal;
-    font-size: large;
+    font-size: xx-large;
     text-decoration: none;
     color: black;
 }
@@ -77,6 +93,10 @@
 	transform: scale(1.1); 
     
 }
+a { color: inherit; }
+.discord:hover{
+    color: #0a58ca
+}
 .navbar-element:hover{
     color: white;
     -ms-transform: scale(1.10); /* IE 9 */
@@ -85,15 +105,11 @@
     
 }
 .navbar-logo{
-    margin: 4%;
-    padding: 0.7%;
-    font-size: large;
-    font-family: 'Brondes',Arial,sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    text-decoration: none;
-    color: black;
-    border: solid black;
+    border-left: solid black;
+    padding-top:2%;
+    padding-bottom:3%;
+    margin-right:-3%;
+    margin-left:2%;
     border-radius: 50%;
     
   
@@ -110,6 +126,7 @@ hr {
 .skills{
     margin-left:10%;
     margin-right: 10%;
+    font-size: larger;
 }
 .skills-title{
     font-family: 'CocogooseTitle',Arial,sans-serif;
@@ -139,20 +156,30 @@ hr {
 .portfolio{
     background-color: rgba(216, 216, 216, 0.9);
 }
+.portfolio-table{
+    font-weight: bold;
+    text-align: center;
+}
+
 .contact{
     text-align: center !important;
+    padding-bottom: -5%;
+    
 }
 .contact-logo{
     margin: 2%;
 }
+
 .footer-custom{
     text-align: center;
     color: #DB6AFF;
     margin-bottom:2%;
     padding-top:2%;
-    background:linear-gradient(to top, rgb(58, 58, 58,1), transparent);
+    background:rgb(58, 58, 58);
     width: 100%;
     margin-bottom: -2%;
+    margin-top:-2%;
+    padding-top: -4%;
     bottom: 0;
 }
 
@@ -172,8 +199,8 @@ hr {
     src: url('./font/North\ Zone.otf');
 }
 @font-face {
-    font-family: 'Brondes';
-    src: url('./font/Brondes\ Blue.ttf');
+    font-family: 'Protrial';
+    src: url('./font/Cocogoose\ Pro-trial.ttf');
 }
 
 @font-face {
@@ -183,5 +210,9 @@ hr {
 @font-face {
     font-family: 'Cocogoose';
     src: url('./font/Cocogoose\ Pro\ Thin-trial.ttf');
+}
+@font-face{
+    font-family: 'CocogooseTable';
+    src: url('./font/Cocogoose\ Pro\ Ultralight-trial.ttf');
 }
 

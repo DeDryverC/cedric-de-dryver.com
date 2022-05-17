@@ -5,14 +5,16 @@ import '../App.css';
 function Skills() {
     return(
         <>
-        <div className="skills">
+        <div className='home-background'>
+        <div className="skills ">
+            <br/><br/>
             <div className="skills-left">
                 <span className="skills-title"> Compétences techniques</span><br/>
                 <span className="skills-left-txt">
                     <p>Voici mes compétences techniques : </p>
                     <ul>
-                        <li>Developpement applicatif :  Python - Java - Kotlin - C (Base)</li>
-                        <li>Developpement Web FullStacks :  HTML 5 - ReactJS - NodeJS </li>
+                        <li>Développement applicatif :  Python - Java - Kotlin - C (Base)</li>
+                        <li>Développement Web FullStacks :  HTML 5 - ReactJS - NodeJS </li>
                         <li>Base de Donnée :  MySQL - Firebase</li>
                         <li>Réseau :  Aruba - Cisco</li>
                         <li>Gestionnaire de code : Github</li>
@@ -26,8 +28,8 @@ function Skills() {
                 <span className="skills-right-txt">
                 <p>Voici mes "Soft Skills" (Compétences Générales)</p>
                 <ul>
-                    <li>Editeur Photo : Photoshop, Gimp</li>
-                    <li>Editeur Video : Camtasia</li>
+                    <li>Éditeur Photo : Photoshop, Gimp</li>
+                    <li>Éditeur Vidéo : Camtasia</li>
                     <li>Modérateur de groupe Facebook (entre 5k et 6k membres)</li>
                     <li>Utilisation de LaTeX</li>
                 </ul>
@@ -37,8 +39,8 @@ function Skills() {
                 <span className="skills-title"> Experiences </span><br/>
                 <span className="skills-left-txt">
                 <ul>
-                    <li>Aide de cuisine lors d'évenement - Student job : Préparation, dressage de plat et mises en bouche.</li>
-                    <li>Helpdesk lors d'évenement "Pitch Party" organisé par l'Ephec au printemp 2020</li>
+                    <li>Aide de cuisine en événementiel - Student job : Préparation, dressage de plat et mises en bouche.</li>
+                    <li>Helpdesk lors d'événement "Pitch Party" organisé par l'Ephec au printemps 2020</li>
                     <li>Mise en place du site web de la Caracole Namuroise</li>
                     <li>Stage chez Worldwide Fight Services - Support de niveau 1 & 2, Administration réseau, Configuration réseau, transition de leur intranet
                         du web1 vers du web2.
@@ -58,12 +60,14 @@ function Skills() {
 
                 </span>
             </div>
-            
+
         </div><br/>
+        
         <div><hr/></div>
-        <div className="footer-custom">
-            <p>Made with React - Copyright © 2022 - Cédric De Dryver</p><br/>
-            <p>Mention légales</p><br/>
+        </div>
+        <div className="footer-custom"><br/>
+                <p>Made with ReactJS - Copyright © 2022 - Cédric De Dryver</p><br/>
+                <p>OVHCould - VPS - DNS</p><br/>
         </div>
         </>
     )
