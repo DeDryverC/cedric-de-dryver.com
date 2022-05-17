@@ -28,10 +28,10 @@ function App() {
                 <Navbar/>
                 <Switch>
                     <Route path="/" exact element={<Home/>}/>
-                    <Route path="/Home" element={<Home/>}/>
-                    <Route path="/Skills" element={<Skills/>}/>
-                    <Route path="/Portfolio" element={<Portfolio/>}/>
-                    <Route path="/Informations" element={<Info/>}/>
+                    <Route path="/home" component={Home}/>
+                    <Route path="/skills" element={<Skills/>}/>
+                    <Route path="/portfolio" element={<Portfolio/>}/>
+                    <Route path="/infos" element={<Info/>}/>
                 </Switch>
             </Router>
         </div>

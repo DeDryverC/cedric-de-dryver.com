@@ -7,7 +7,10 @@ function Skills() {
         <>
         <div className='home-background'>
         <div className="skills ">
-            <br/><br/>
+        <br/>
+        <h1 className="portfolio-title">Compétences</h1>
+        <hr/>
+        <br/>
             <div className="skills-left">
                 <span className="skills-title"> Compétences techniques</span><br/>
                 <span className="skills-left-txt">
@@ -60,6 +63,7 @@ function Skills() {
 
                 </span>
             </div>
+            
 
         </div><br/>
         
