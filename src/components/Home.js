@@ -5,23 +5,20 @@ import ProfilePic from '../Images/pp.jpg'
 import '../App.css';
 
 function Home() {
-    const [matches, setMatch] = useState(null)
-    const [matcheslil , setMatchlil] = useState(true)
+    const [width, setWidth] = useState(window.innerWidth);
 
-    const handler = e => setMatch(e.matches);
-    const handler2 = e => setMatchlil(e.matches);
-
-    const init = () =>{
-
+    function handleWindowSizeChange() {
+        setWidth(window.innerWidth);
     }
     useEffect(() => {
-        const interval = setInterval(() => {
-            window.matchMedia("(min-width: 1350px)").addEventListener('change', handler);
-            window.matchMedia("(min-width: 600px)").addEventListener('change', handler2);
-          }, 2000);
-        return () => clearInterval(interval);
+        window.addEventListener('resize', handleWindowSizeChange);
+        return () => {
+            window.removeEventListener('resize', handleWindowSizeChange);
+        }
     }, []);
 
+    const matches = width >= 1350;
+    const matcheslil = width >=600
     return(
         <>  
         {matches && <>

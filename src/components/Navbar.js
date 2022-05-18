@@ -7,21 +7,19 @@ import '../App.css';
 
 
 function Navbar( ){
-    const [matches, setMatch] = useState(null)
+    const [width, setWidth] = useState(window.innerWidth);
 
-    const handler = e => setMatch(e.matches);
-
-    const init = () =>{
-
+    function handleWindowSizeChange() {
+        setWidth(window.innerWidth);
     }
     useEffect(() => {
-        const interval = setInterval(() => {
-            let mediaquery=  window.matchMedia("(min-width: 1350px)");
-            mediaquery.addEventListener('change', handler);
-            console.log(matches)
-          }, 2000);
-        return () => clearInterval(interval);
+        window.addEventListener('resize', handleWindowSizeChange);
+        return () => {
+            window.removeEventListener('resize', handleWindowSizeChange);
+        }
     }, []);
+
+    const matches = width >= 1350;
     return(
         <>
         <div className="navbar-custom">

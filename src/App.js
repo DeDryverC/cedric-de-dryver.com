@@ -4,7 +4,7 @@ import { loadFull } from "tsparticles";
 import particlesOptions from "./particles.json";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Routes as Switch,
     Route,
     Link
@@ -23,15 +23,15 @@ function App() {
 
     return (
         <div className="App">
+            
+            <Particles options={particlesOptions} init={particlesInit}/>
+            <Navbar/>
             <Router>
-                <Particles options={particlesOptions} init={particlesInit}/>
-                <Navbar/>
                 <Switch>
-                    <Route path="/" exact element={<Home/>}/>
-                    <Route path="/home" component={Home}/>
-                    <Route path="/skills" element={<Skills/>}/>
-                    <Route path="/portfolio" element={<Portfolio/>}/>
-                    <Route path="/infos" element={<Info/>}/>
+                    <Route exact path="/" element={<Home/>}/>
+                    <Route exact path="/skills" element={<Skills/>}/>
+                    <Route exact path="/portfolio" element={<Portfolio/>}/>
+                    <Route exact path="/infos" element={<Info/>}/>
                 </Switch>
             </Router>
         </div>
